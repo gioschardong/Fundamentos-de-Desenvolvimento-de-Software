@@ -12,6 +12,9 @@ public class App {
         // Solicitação: Criar um novo modelo de carro "suv"
         Carro suv = Carro.criarCarroSUV();
 
+        // Criar carro SUVFlex
+        Carro suvFlex = Carro.criarCarroSUVFlex();
+
         // Abastecendo o carro básico
         System.out.println("\nAbastecendo carro basico com gasolina");
         basico.abastece(TipoCombustivel.GASOLINA, 55);
@@ -52,5 +55,25 @@ public class App {
         System.out.println("\nViajando com o carro SUV");
         suv.viaja(200);
         System.out.println(suv);
+
+        // Abastecer o carro SUVFlex com gasolina
+        System.out.println("\nAbastecendo carro SUVFlex com gasolina");
+        suvFlex.abastece(TipoCombustivel.GASOLINA, 30); // Abastecendo com gasolina
+        System.out.println(suvFlex);
+
+        // Viajar com o carro SUVFlex
+        System.out.println("\nViajando com o carro SUVFlex");
+        suvFlex.viaja(200);
+        System.out.println(suvFlex);
+
+        // Abastecer o carro SUVFlex com álcool
+        System.out.println("\nAbastecendo carro SUVFlex com álcool");
+        suvFlex.abastece(TipoCombustivel.ALCOOL, 40); // Abastecendo com álcool
+        System.out.println(suvFlex);
+
+        // Viajar com o carro SUVFlex
+        System.out.println("\nViajando com o carro SUVFlex");
+        suvFlex.viaja(150);
+        System.out.println(suvFlex);
     }
 }

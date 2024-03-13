@@ -61,6 +61,10 @@ public class Carro {
     public static Carro criarCarroSUV() {
         return new Carro("SUV", TipoCombustivel.FLEX, 8, 55);
     }
+    
+    public static Carro criarCarroSUVFlex() {
+        return new Carro("SUVFlex", TipoCombustivel.FLEX, 8, 65);
+    }
 
     @Override
     public String toString() {
