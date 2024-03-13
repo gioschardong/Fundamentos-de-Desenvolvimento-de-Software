@@ -5,6 +5,8 @@ public class App {
 
         // Solicitação: Criar um novo modelo de carro "Esportivo"
         Carro esportivo = Carro.criarCarroEsportivo();
+        // Solicitação: Criar um novo modelo de carro "Esportivo"
+        Carro utilitario = Carro.criarCarroUtilitario();
 
         // Abastecendo o carro básico
         System.out.println("\nAbastecendo carro basico com gasolina");
@@ -26,5 +28,15 @@ public class App {
         System.out.println("\nViajando com o carro esportivo");
         esportivo.viaja(200);
         System.out.println(esportivo);
+
+        // Abastecer o carro utilitário com diesel
+        System.out.println("\nAbastecendo carro utilitario com diesel");
+        utilitario.abastece(TipoCombustivel.DIESEL, 70);
+        System.out.println(utilitario);
+
+        // Viajar com o carro utilitário
+        System.out.println("\nViajando com o carro utilitario");
+        utilitario.viaja(300);
+        System.out.println(utilitario);
     }
 }
