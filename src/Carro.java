@@ -57,7 +57,11 @@ public class Carro {
     public static Carro criarCarroUtilitario() {
         return new Carro("Utilitario", TipoCombustivel.DIESEL, 5, 70);
     }
-    
+
+    public static Carro criarCarroSUV() {
+        return new Carro("SUV", TipoCombustivel.FLEX, 8, 55);
+    }
+
     @Override
     public String toString() {
         return "Carro:\n  Modelo=" + modelo + "\n  Motor=" + motor + "\n  Tanque=" + tanque;
