@@ -1,0 +1,13 @@
+1° Alteração:
+
+Relatório:
+Impacto das Modificações:
+
+Adicionamos um novo modelo de carro ("Esportivo") sem modificar a estrutura existente das classes Carro, Motor, e TanqueCombustivel.
+Criamos um método estático criarCarroEsportivo() na classe Carro para facilitar a criação de instâncias do novo modelo.
+No método main da classe App, instanciamos e manipulamos o novo modelo de carro conforme solicitado.
+Reflexão sobre a Estrutura Original:
+
+A estrutura original das classes Carro, Motor, e TanqueCombustivel é bastante modular e permite adicionar novos modelos de carro sem afetar o código existente.
+No entanto, poderíamos ter utilizado interfaces ou padrões de projeto como o padrão Strategy para lidar com diferentes tipos de motores e tanques de combustível de forma mais flexível e extensível.
+
